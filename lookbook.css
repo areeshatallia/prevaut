@@ -1,0 +1,115 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f6f2;
+    }
+
+    .lookbook-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      margin-top: 150px;
+    }
+
+    .lookbook-left {
+      flex: 1;
+      min-width: 50%;
+    }
+
+    .lookbook-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .lookbook-right {
+      flex: 1;
+      min-width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      align-content: center;
+    }
+    .outer-card{
+        font-family: "Libre Baskerville", serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 19.5px;
+color: rgb(18, 18, 18);
+text-align: center;
+background-color: #fff;
+padding: 20px;
+    }
+
+    .card {
+        height: 300px;
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #eee;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Images overlap */
+    .card img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease;
+      object-fit: contain;
+    }
+
+    .card img:first-child {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .card img:last-child {
+      opacity: 0;
+    }
+
+    .card:hover img:first-child {
+      opacity: 0;
+    }
+
+    .card:hover img:last-child {
+      opacity: 1;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card h3 {
+      font-size: 13px;
+      font-weight: normal;
+      color: #555;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .lookbook-section {
+        flex-direction: column;
+      }
+      .lookbook-left,
+      .lookbook-right {
+        min-width: 100%;
+      }
+      .lookbook-right {
+        grid-template-columns: 1fr;
+      }
+    }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prevaut Navbar</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <!-- Left links -->
+    <div class="nav-links" id="nav-links">
+      <a href="/lookbook.html">Shop</a>
+      <a href="/lookbook.html">Lookbook</a>
+      <a href="/index.html">About</a>
+    </div>
+
+    <!-- Center logo -->
+    <div class="logo">PRÉVAUT</div>
+
+    <!-- Right section -->
+    <div class="nav-right" id="nav-right">
+      <div>United Kingdom | GBP £</div>
+      <div>Shopping bag (0)</div>
+    </div>
+  </nav>
+  <div class="hero">
+       <div class="overlay">
+      <h1>Jewelry as Uncompromising as You</h1>
+      <p>Understated Elegance, Handcrafted in Europe</p>
+      <button>Find your Piece</button>
+    </div>
+  </div>
+<div class="shop">
+  <h1><i>Shop CATEGORIES</i></h1>
+  <hr>
+  <div class="container">
+  <div class="item"><img src="https://prevaut.com/cdn/shop/collections/Frame_4.png?v=1733965106&width=165%20165w,//prevaut.com/cdn/shop/collections/Frame_4.png?v=1733965106&width=330%20330w,//prevaut.com/cdn/shop/collections/Frame_4.png?v=1733965106%20500w" alt=""><h1>Bracelets</h1></div>
+  <div class="item"><img src="https://prevaut.com/cdn/shop/collections/Frame_4_1.png?v=1733965207&width=165%20165w,//prevaut.com/cdn/shop/collections/Frame_4_1.png?v=1733965207&width=330%20330w,//prevaut.com/cdn/shop/collections/Frame_4_1.png?v=1733965207%20500w" alt=""><h1>Necklaces</h1></div>
+  <div class="item"><img src="https://prevaut.com/cdn/shop/collections/Frame_4_2.png?v=1733965233&width=165%20165w,//prevaut.com/cdn/shop/collections/Frame_4_2.png?v=1733965233&width=330%20330w,//prevaut.com/cdn/shop/collections/Frame_4_2.png?v=1733965233%20500w" alt=""><h1>Ring</h1></div>
+</div>
+</div>
+
+
+<div class="wrapper">
+  <div class="image">
+    <img src="https://prevaut.com/cdn/shop/files/Lookbook_home_page.webp?v=1736947439&width=1500" alt="Sample">
+  </div>
+  <div class="content">
+   <h1>LOOKBOOK</h1>
+    <hr>
+    <h2>GET INSPIRED</h2>
+    <p>Browse through our Lookbook to get inspired and find your next piece</p>
+    <a href="">DISCOVER</a>
+  </div>
+</div>
+
+<div class="services">
+  <h1>At your Service</h1>
+  <hr>
+  <div class="container">
+  <div class="service"><h2>Free Worldwide Shipping</h2><img src="//prevaut.com/cdn/shop/files/Worldwide_shippment_1.png?v=1734073159&width=3200" alt=""></div>
+  <div class="service"><h2>Free Returns and Exchanges</h2><img src="//prevaut.com/cdn/shop/files/Returns_1.png?v=1734073167&width=3200" alt=""></div>
+  <div class="service"><h2>Handcrafted in Italy and Germany</h2><img src="//prevaut.com/cdn/shop/files/handcrafted_1.png?v=1734073167&width=3200" alt=""></div>
+</div>
+</div>
+<hr class="end">
+
+
+<!-- ====== FOOTER START ====== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <h3>NEWSLETTER</h3>
+      <p>Subscribe to get a free engraving on your purchase</p>
+      <form>
+        <input type="email" placeholder="Email address" required> <br>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- FOOTER LINKS -->
+    <div class="footer-links">
+      <div class="column">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Jewelry Care</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>LEGAL</h4>
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- ====== FOOTER END ====== -->
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/923325451245" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+  <span>
+  <p>Chat with us</p>
+  <p class="span">Whatsapp</p>
+  </span>
+  
+</a>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    const navRight = document.getElementById("nav-right");
+
+    hamburger.addEventListener("click", () => {
+      const isVisible = navLinks.style.display === "flex";
+      navLinks.style.display = isVisible ? "none" : "flex";
+      
+    });
+  </script>
+</body>
+</html>
